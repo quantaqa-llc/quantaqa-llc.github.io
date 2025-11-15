@@ -1,110 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>QuantaQA LLC</title>
- <style>
-    body {
-        font-family: Arial, sans-serif;
-        margin: 40px;
-        text-align: center;
-        color: #333;
-    }
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>QuantaQA LLC</title>
 
-    img {
-        max-width: 200px;
-        margin-bottom: 20px;
-        border-radius: 8px;
-    }
+    <!-- Icons (for email + phone) -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-oq6F8R7lGsV4GxV7N3NQBJfY5i6t6b6+uYxgF6V9U6tVYl5U8p+9n3wE+U7c7nJ1N3T4b4E1F6Qn2ZkB4zYKg=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"
+    />
 
-    /* Centered paragraph with soft gray background */
-    .intro-text {
-        max-width: 650px;
-        margin: 30px auto;
-        line-height: 1.6;
-        font-size: 18px;
-        padding: 25px 30px;
-        background: #f6f6f6; /* VERY light gray */
-        border-radius: 6px;
-        text-align: center;
-        box-shadow: 0 1px 3px rgba(0,0,0,0.04); /* optional soft lift */
-    }
+    <style>
+        body {
+            background: #f7f7f7;
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            color: #333;
+        }
 
-    .contact-section {
-        margin-top: 30px;
-        font-size: 18px;
-    }
+        .container {
+            max-width: 900px;
+            margin: 40px auto 60px auto;
+            padding: 0 20px;
+            text-align: center;
+        }
 
-    .contact-section i {
-        margin-right: 8px;
-    }
+        .logo {
+            margin-bottom: 24px;
+        }
 
-    .footer {
-        margin-top: 40px;
-        font-size: 14px;
-        color: #777;
-    }
-</style>
+        .logo img {
+            max-width: 220px;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.18);
+        }
 
+        .bio-card {
+            max-width: 700px;
+            margin: 0 auto 30px auto;
+            padding: 32px 36px;
+            background: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 2px 14px rgba(0, 0, 0, 0.06);
+            text-align: left;
+            line-height: 1.65;
+            font-size: 18px;
+        }
 
+        .contact-section {
+            margin-top: 18px;
+        }
+
+        .contact-section h2 {
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+
+        .contact-items {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 16px;
+        }
+
+        .contact-item {
+            display: inline-flex;
+            align-items: center;
+            font-size: 18px;
+            text-decoration: none;
+            color: #333;
+        }
+
+        .contact-item i {
+            margin-right: 8px;
+            color: #007acc;
+        }
+
+        .contact-item:hover {
+            text-decoration: underline;
+        }
+
+        .footer {
+            margin-top: 40px;
+            font-size: 14px;
+            color: #777;
+        }
+
+        @media (max-width: 600px) {
+            .bio-card {
+                padding: 24px 20px;
+                font-size: 16px;
+            }
+        }
+    </style>
 </head>
-<body style="
-    font-family: Arial, sans-serif;
-    color: #222;
-    margin: 0;
-    padding: 0;
-    background-color: #fafafa;
-">
+<body>
+    <div class="container">
+        <!-- Logo -->
+        <div class="logo">
+            <!-- Make sure this filename matches exactly what’s in your repo -->
+            <img src="QuantaLogo.png" alt="QuantaQA LLC logo" />
+        </div>
 
-    <!-- Logo -->
-    <header style="text-align:center; padding: 40px 0 10px;">
-        <img src="QuantaLogo.png" alt="QuantaQA Logo"
-             style="max-width:180px; width:40%; height:auto; border-radius:6px;">
-    </header>
+        <!-- Bio / Services block -->
+        <div class="bio-card">
+            <strong>QuantaQA LLC</strong> is a software quality engineering consultancy focused on helping
+            teams modernize and simplify their testing practices. We specialize in test planning,
+            automation frameworks, CI/CD integration, and AI-augmented QA. Everything we do is
+            designed to boost release confidence and ensure a reliable, predictable experience
+            for your product’s end users.
+        </div>
 
-    <!-- Main Content -->
-    <main style="
-        max-width: 700px;
-        margin: 0 auto;
-        padding: 10px 20px;
-        text-align: center;
-        line-height: 1.6;
-        font-size: 18px;
-    ">
-        <p class="intro-text">
-            <strong>QuantaQA LLC</strong> is a software quality engineering consultancy focused on helping teams
-            modernize and simplify their testing practices. We specialize in test planning, automation frameworks,
-            CI/CD integration, and AI-augmented QA. Everything we do is designed to boost release confidence and ensure
-            a reliable, predictable experience for your product’s end users.
-        </p>
-
-
-        <!-- Contact Section -->
-        <div style="margin-top: 35px; font-size: 17px;">
-
-            <div style="margin-bottom: 10px;">
-                <span style="font-size: 22px;">📧</span>
-                <a href="mailto:contact@quantaqa.io"
-                   style="text-decoration: none; color: #0077cc; margin-left: 5px;">
+        <!-- Contact section -->
+        <section class="contact-section">
+            <h2>Contact</h2>
+            <div class="contact-items">
+                <a class="contact-item" href="mailto:contact@quantaqa.io">
+                    <i class="fa-solid fa-envelope"></i>
                     contact@quantaqa.io
                 </a>
-            </div>
-
-            <div>
-                <span style="font-size: 22px;">📞</span>
-                <a href="tel:+12026700560"
-                   style="text-decoration: none; color: #0077cc; margin-left: 5px;">
+                <a class="contact-item" href="tel:+12026700560">
+                    <i class="fa-solid fa-phone"></i>
                     (202) 670-0560
                 </a>
             </div>
+        </section>
 
+        <!-- Footer -->
+        <div class="footer">
+            © 2025 QuantaQA LLC — All rights reserved.
         </div>
-    </main>
-
-    <!-- Footer -->
-    <footer style="text-align:center; padding: 40px 0 20px; color: #777; font-size: 14px;">
-        © 2025 QuantaQA LLC — All rights reserved.
-    </footer>
-
+    </div>
 </body>
+</html>
