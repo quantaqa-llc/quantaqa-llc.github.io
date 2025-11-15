@@ -6,58 +6,44 @@
   <title>QuantaQA LLC</title>
   <style>
     body {
-      font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
-      margin: 2.5em;
-      background: #f9fafb;
-      color: #111827;
+        font-family: Arial, sans-serif;
+        margin: 40px;
+        text-align: center;
+        color: #333;
     }
-    header {
-      text-align: center;
-      margin-bottom: 2em;
+
+    img {
+        max-width: 200px;
+        margin-bottom: 20px;
+        border-radius: 8px;
     }
-    h1 {
-      color: #005f73;
-      margin-bottom: 0.25em;
+
+    /* FIXED: Clean centered paragraph */
+    .intro-text {
+        max-width: 650px;   /* controls line length for polish */
+        margin: 0 auto;     /* perfectly centers the block */
+        line-height: 1.6;
+        font-size: 18px;
+        padding: 0 20px;    /* safety padding on mobile */
+        text-align: center;
     }
-    h3 {
-      margin-top: 0;
-      font-weight: 500;
-      color: #374151;
+
+    .contact-section {
+        margin-top: 30px;
+        font-size: 18px;
     }
-    p {
-      max-width: 720px;
-      margin: 1em auto;
-      line-height: 1.6;
+
+    .contact-section i {
+        margin-right: 8px;
     }
-    .contact {
-      text-align: center;
-      margin-top: 2.5em;
+
+    .footer {
+        margin-top: 40px;
+        font-size: 14px;
+        color: #777;
     }
-    .contact-line {
-      margin: 0.35em 0;
-      font-size: 1rem;
-    }
-    .icon {
-      display: inline-block;
-      margin-right: 8px;
-      font-size: 1.1em;
-      vertical-align: middle;
-    }
-    .contact a {
-      color: #005f73;
-      text-decoration: none;
-      font-weight: 600;
-    }
-    .contact a:hover {
-      text-decoration: underline;
-    }
-    footer {
-      text-align: center;
-      margin-top: 3em;
-      font-size: 0.85rem;
-      color: #6b7280;
-    }
-  </style>
+</style>
+
 </head>
 <body style="
     font-family: Arial, sans-serif;
@@ -82,12 +68,10 @@
         line-height: 1.6;
         font-size: 18px;
     ">
-        <p>
-            <strong>QuantaQA LLC</strong> is a software quality engineering consultancy focused on helping teams
-            modernize and simplify their testing practices. We specialize in test planning, automation frameworks, 
-            CI/CD integration, and AI-augmented QA. Everything we do is designed to boost release confidence and 
-            ensure a reliable, predictable experience for your product's end users.
+        <p class="intro-text">
+            <strong>QuantaQA LLC</strong> is a software quality engineering consultancy focused on helping teams modernize and simplify their testing practices. We specialize in test planning, automation frameworks, CI/CD integration, and AI-augmented QA. Everything we do is designed to boost release confidence and ensure a reliable, predictable experience for your product's end users.
         </p>
+
 
         <!-- Contact Section -->
         <div style="margin-top: 35px; font-size: 17px;">
